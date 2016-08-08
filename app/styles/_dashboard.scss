@@ -1,0 +1,47 @@
+/* Chart Colors */
+$slice1 : #d70206;
+.ct-series-a{
+    stroke		: $slice1;
+	background	: $slice1;
+}
+
+.widgets{
+	.panel{
+		.panel-heading{
+			h3.panel-title{
+				font-weight:bold;
+			}
+		}
+		.panel-body{
+			position:relative;
+			.total{
+				position:absolute;
+				top: 50%;
+				right: 50%;
+				transform: translateX(50%)translateY(-50%);
+				margin: 0px;
+				color: lightgray;
+			}
+			.ct-chart{
+				.ct-slice-donut{
+					&:hover{
+						cursor: pointer;
+					}
+				}
+			}
+		}
+		.list-group{
+			a{
+				text-transform:capitalize;
+			}
+		}
+	}
+}
+
+
+/* Helpers */
+.margin_btm{
+	margin-bottom: 30px !important;
+}
+
+@import 'reports';

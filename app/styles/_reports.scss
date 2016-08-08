@@ -1,0 +1,74 @@
+#reports{
+	aside{
+		#toolbar{
+			margin-bottom:40px;
+			.row{
+				margin-bottom: 10px;
+			}
+		}
+	}
+	main{
+		#notifications{
+		
+		}
+		#result{
+			font-size: 11px;
+			margin-bottom: 40px;
+			background:white;
+			    padding: 10px;
+			.row{
+				dt{
+						text-align:left;
+				}
+				dd{
+						text-align:right;
+				}
+				table{
+					float:left;
+					font-size:10px;
+					tr{
+						th,td{
+							text-align:center;
+							font-size:inherit;
+						}
+					}
+				}
+				&.doc_info{
+					h2{
+						font-size:14px;
+						text-transform:uppercase;
+						&.gray{
+							font-size:16px;
+							color:lightgray;
+						}
+					}
+					dt{
+						text-align:left;
+						width:50%;
+					}
+					dd{
+						text-align:right;
+						width: 50%;
+						margin-left: 110px;
+					}
+				}
+				&.cust_info{
+				
+				}
+				&.manf_info{
+				
+				}
+				&.signatures{
+					margin-top:40px;
+					text-align:center;
+					.form-control{
+						border-radius: 0px;
+						border: none;
+						border-bottom: 1px solid gray;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+	}
+}
