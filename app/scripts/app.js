@@ -14,36 +14,39 @@ angular
 		'ngRoute',
 		'ngSanitize',
 		'ngTouch',
-		'daterangepicker'
+		'daterangepicker',
+		'angular-growl'
 	])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
-      .when('/dashboard', {
-        templateUrl: 'views/dashboard.html',
-        controller: 'DashboardCtrl',
-        controllerAs: 'dashboard'
-      })
-      .when('/reports', {
-        templateUrl: 'views/reports.html',
-        controller: 'ReportsCtrl',
-        controllerAs: 'reports'
-      })
-      .when('/elements', {
-        templateUrl: 'views/elements.html',
-        controller: 'ElementsCtrl',
-        controllerAs: 'elements'
-      })
-      .otherwise({
-        redirectTo: '/'
+	.config(function ($routeProvider) {
+		$routeProvider
+		  .when('/', {
+			templateUrl: 'views/main.html',
+			controller: 'MainCtrl',
+			controllerAs: 'main'
+		  })
+		  .when('/about', {
+			templateUrl: 'views/about.html',
+			controller: 'AboutCtrl',
+			controllerAs: 'about'
+		  })
+		  .when('/dashboard', {
+			templateUrl: 'views/dashboard.html',
+			controller: 'DashboardCtrl',
+			controllerAs: 'dashboard'
+		  })
+		  .when('/reports', {
+			templateUrl: 'views/reports.html',
+			controller: 'ReportsCtrl',
+			controllerAs: 'reports'
+		  })
+		  .when('/elements', {
+			templateUrl: 'views/elements.html',
+			controller: 'ElementsCtrl',
+			controllerAs: 'elements'
+		  })
+		  .otherwise({
+			redirectTo: '/'
       });
-  });
+	},function (growlProvider) {
+	  growlProvider.globalTimeToLive(3000);
+	});

@@ -403,5 +403,5 @@ angular.module('dashboard20App')
 			
 			self.count = 0;
 		}
-	}
+	};
   });

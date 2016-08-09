@@ -35,6 +35,7 @@ module.exports = function(config) {
       'bower_components/angular-daterangepicker/js/angular-daterangepicker.js',
       'bower_components/jspdf/dist/jspdf.debug.js',
       'bower_components/html2canvas/build/html2canvas.js',
+      'bower_components/angular-growl-v2/build/angular-growl.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
